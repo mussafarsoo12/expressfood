@@ -520,6 +520,8 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+
+          
         </div>
       </section>
 
@@ -615,8 +617,33 @@ export default function Home() {
               </div>
               <p className="text-foreground mb-4">"Je suis passé par hasard avec ma femme le jeudi à cugy, maintenant on revient tout le jeudi c'est le Meilleur kebab !! Qualité prix c'est aussi Top"</p>
               <p className="font-bold text-sm">- Leonardo Gentile</p>
-              <p className="text-xs text-muted-foreground">Gymnase de Sévelin</p>
+              <p className="text-xs text-muted-foreground">Cugy</p>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Map Section (Under Testimonials) */}
+      <section className="py-16 bg-muted/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-6 flex items-center justify-between">
+            <h2 className="font-display text-3xl md:text-5xl font-black uppercase tracking-tighter">Carte</h2>
+            <Button asChild variant="outline" className="border-primary text-primary">
+              <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                Ouvrir dans Google Maps <ExternalLink className="w-4 h-4" />
+              </a>
+            </Button>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-border bg-muted/30 shadow-sm">
+            <div className="aspect-[16/9]">
+              <iframe
+                title="Express FOOD - Google Maps"
+                src={`https://www.google.com/maps?q=Expressfood.VD&hl=fr&z=14&output=embed`}
+                loading="lazy"
+                className="w-full h-full"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -656,7 +683,21 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-white/10 mt-12 pt-8 text-center text-white/30 text-xs font-bold uppercase tracking-widest">
-            © 2026 Express FOOD. TOUS DROITS RÉSERVÉS.
+            <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4">
+              <span>© 2026 Express FOOD. TOUS DROITS RÉSERVÉS.</span>
+              <span className="hidden md:inline">•</span>
+              <span className="normal-case font-medium text-white/60">
+                le site à été créer par
+                <a
+                  href="https://mussafarsoo.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ml-1 font-black underline bg-gradient-to-r from-blue-400 via-orange-400 to-pink-500 bg-clip-text text-transparent hover:from-blue-500 hover:via-orange-500 hover:to-red-500"
+                >
+                  @mussafarsoo
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </footer>
