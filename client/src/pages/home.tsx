@@ -669,7 +669,7 @@ export default function Home() {
             </div>
             <div className="text-center">
               <div className="flex justify-center gap-6 mb-4">
-                <a href="#" className="hover:text-primary transition-colors"><Instagram className="w-8 h-8" /></a>
+                <a href="https://www.instagram.com/expressfood.vd/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Instagram className="w-8 h-8" /></a>
                 <a href="https://www.facebook.com/people/Expressfood-Vd/pfbid02GbJcRhddr4bu62Y5PXCJhEKtn1RZj1ytHxvniSEYJbEijXNDHG2FBgvzuLJq4ddel/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors"><Facebook className="w-8 h-8" /></a>
               </div>
               <p className="text-sm font-bold uppercase tracking-widest text-white/40">Suivez l'aventure</p>
